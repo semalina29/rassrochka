@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Чем платить рассрочку · Школа Александры Самородовой</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+
+:root{--ink:#16141a;--muted:#6b6675;--line:#e8e2ee;--red:#e8001d;--pink:#ff4d6d;
+ --violet:#7a2ff2;--blue:#2e6bff;--lime:#00c48c;--amber:#ffb020;--cream:#fdf9f4;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Manrope',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;}
+.wrap{max-width:840px;margin:0 auto;padding:0 20px 70px;}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 0 14px;flex-wrap:wrap;}
+.brand{font-family:'Unbounded',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;}
+.brand span{color:var(--muted);font-weight:600;}
+.badge{font-family:'Unbounded',sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+ background:linear-gradient(120deg,var(--violet),var(--pink));color:#fff;padding:8px 14px;border-radius:30px;}
+.hero{background:linear-gradient(140deg,#7a2ff2 0%,#e8001d 55%,#ff8a3d 100%);border-radius:30px;padding:38px 32px;color:#fff;margin-top:8px;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;right:-70px;top:-70px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.12);}
+.hero .eyebrow{font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:14px;position:relative;}
+.hero h1{font-family:'Unbounded',sans-serif;font-weight:900;font-size:2rem;line-height:1.14;letter-spacing:-.02em;position:relative;}
+@media(max-width:600px){.hero h1{font-size:1.42rem;}.hero{padding:28px 22px;}}
+.hero .lead{margin-top:16px;font-size:1.05rem;color:rgba(255,255,255,.93);position:relative;}
+.lbl{font-family:'Unbounded',sans-serif;font-size:.86rem;font-weight:800;letter-spacing:.06em;margin:48px 0 12px;display:inline-block;padding:9px 16px;border-radius:14px;}
+@media(max-width:600px){.lbl{font-size:.78rem;}}
+.lbl.v{background:rgba(122,47,242,.1);color:var(--violet);}
+.lbl.r{background:rgba(232,0,29,.09);color:var(--red);}
+.lbl.b{background:rgba(46,107,255,.1);color:var(--blue);}
+.lbl.g{background:rgba(0,196,140,.12);color:#00996d;}
+.lbl.a{background:rgba(255,176,32,.16);color:#a86b00;}
+h2{font-family:'Unbounded',sans-serif;font-weight:800;font-size:1.42rem;line-height:1.22;letter-spacing:-.015em;margin-bottom:14px;}
+@media(max-width:600px){h2{font-size:1.14rem;}}
+h2 .r{color:var(--red);}h2 .v{color:var(--violet);}h2 .b{color:var(--blue);}h2 .g{color:#00996d;}
+p{margin-bottom:12px;font-size:1.03rem;}
+p b{font-weight:800;}
+.steps{margin-top:6px;}
+.step{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:18px;padding:18px 20px;margin-bottom:10px;border:1px solid var(--line);}
+.step .ic{flex:0 0 auto;width:34px;height:34px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+ font-family:'Unbounded',sans-serif;font-weight:800;font-size:.8rem;color:#fff;background:linear-gradient(135deg,var(--violet),var(--pink));}
+.step .st{font-size:1rem;line-height:1.45;}
+.big{background:var(--ink);color:#fff;border-radius:26px;padding:30px 28px;margin-top:18px;}
+.big h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.2rem;margin-bottom:12px;}
+.big p{color:rgba(255,255,255,.88);}
+.big p b{color:#fff;}
+.big .hl{color:#ff6b85;font-weight:800;}
+.callout{background:linear-gradient(120deg,#fff6e8,#ffeedd);border-radius:20px;padding:22px 24px;margin-top:16px;border:1px solid #ffd9a8;font-size:1.03rem;line-height:1.5;}
+.callout b{font-weight:800;color:#a85c00;}
+.grad{background:linear-gradient(135deg,#eef2ff,#f6edff);border-radius:24px;padding:26px;margin-top:16px;border:1px solid #ddd2f7;}
+.grad h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.12rem;color:var(--violet);margin-bottom:12px;}
+.grad ul{list-style:none;}
+.grad li{padding:9px 0 9px 26px;position:relative;font-size:1rem;line-height:1.45;}
+.grad li::before{content:'✓';position:absolute;left:0;color:var(--violet);font-weight:900;}
+.money{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:6px;}
+.mrow{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 22px;border-top:1px solid var(--line);}
+.mrow:first-child{border-top:none;}
+.mrow .s{font-size:1rem;font-weight:700;}
+.mrow .p2{font-family:'Unbounded',sans-serif;font-size:.84rem;font-weight:800;color:var(--red);white-space:nowrap;}
+.calc{background:linear-gradient(140deg,#00c48c,#00a3ff);border-radius:26px;padding:30px 28px;color:#fff;margin-top:16px;}
+.calc h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.22rem;margin-bottom:16px;}
+.crow{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 0;border-top:1px solid rgba(255,255,255,.22);font-size:1rem;}
+.crow:first-of-type{border-top:none;}
+.crow b{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.05rem;white-space:nowrap;}
+.calc .fin{margin-top:16px;background:rgba(255,255,255,.2);border-radius:16px;padding:18px 20px;font-size:1.04rem;line-height:1.45;}
+.calc .fin b{font-weight:800;}
+.case{display:flex;gap:20px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;margin-top:16px;}
+.case img{width:110px;height:110px;border-radius:22px;object-fit:cover;flex:0 0 auto;}
+.case .cn{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.2rem;}
+.case .cd{font-size:.97rem;color:var(--muted);margin-top:4px;max-width:44ch;}
+.proof{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;margin-top:12px;text-align:center;}
+.proof .sum{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.6rem;color:var(--lime);margin-bottom:12px;}
+.proof img{display:block;width:100%;max-width:380px;margin:0 auto;height:auto;border-radius:12px;border:1px solid var(--line);}
+.proof .cap{font-size:.88rem;color:var(--muted);margin-top:10px;}
+.prog{background:linear-gradient(140deg,#16141a,#2a1f3d);color:#fff;border-radius:26px;padding:30px 28px;margin-top:16px;}
+.prog h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.22rem;margin-bottom:6px;}
+.prog .sm{color:rgba(255,255,255,.7);font-size:.95rem;margin-bottom:18px;}
+.prog ul{list-style:none;}
+.prog li{padding:11px 0 11px 28px;position:relative;font-size:1rem;line-height:1.42;border-top:1px solid rgba(255,255,255,.1);}
+.prog li:first-child{border-top:none;}
+.prog li::before{content:'';position:absolute;left:0;top:20px;width:14px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--violet),var(--pink));}
+.reviews{background:radial-gradient(120% 120% at 15% 0%,#1c1c1c,#0b0b0b 60%);color:#fff;border-radius:24px;padding:34px 30px;text-align:center;margin-top:16px;}
+.reviews h2{color:#fff;}
+.reviews p{color:rgba(255,255,255,.82);max-width:54ch;margin:0 auto 12px;}
+.rn{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin:20px 0;}
+.rn div b{display:block;font-family:'Unbounded',sans-serif;font-size:1.9rem;font-weight:900;line-height:1;}
+.rn div span{display:block;font-size:.78rem;color:rgba(255,255,255,.6);margin-top:6px;}
+.reviews a{display:inline-block;margin-top:6px;background:#fff;color:var(--ink);text-decoration:none;font-family:'Unbounded',sans-serif;font-weight:700;font-size:.8rem;padding:15px 30px;border-radius:13px;}
+.linkbtn{display:block;text-align:center;text-decoration:none;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.82rem;padding:19px 26px;border-radius:16px;margin-top:14px;}
+.linkbtn.dark{background:var(--ink);color:#fff;}
+.why18{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:6px;}
+.wrow{display:flex;gap:14px;align-items:flex-start;padding:18px 22px;border-top:1px solid var(--line);}
+.wrow:first-child{border-top:none;}
+.wrow .ic2{flex:0 0 auto;width:28px;height:28px;border-radius:9px;background:rgba(232,0,29,.1);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.82rem;font-family:'Unbounded',sans-serif;}
+.wrow .t2{font-size:1rem;line-height:1.45;}
+.reveal{display:block;width:100%;border:none;border-radius:18px;padding:24px;margin-top:18px;cursor:pointer;
+ background:linear-gradient(120deg,var(--red),var(--violet));color:#fff;font-family:'Unbounded',sans-serif;font-weight:900;font-size:1rem;}
+#priceZone{display:none;}
+.pricecard{background:radial-gradient(120% 130% at 12% 0%,#241f2e,#100d16 62%);color:#fff;border-radius:24px;padding:28px 30px;text-align:center;margin-top:16px;}
+.pricecard .today{font-size:.92rem;color:rgba(255,255,255,.6);margin-bottom:14px;}
+.pricecard .today b{color:#fff;font-weight:700;}
+.pricecard .plabel{font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin-bottom:10px;}
+.pricecard .pbig{font-family:'Unbounded',sans-serif;font-weight:900;font-size:2.3rem;line-height:1;margin-bottom:12px;}
+.pricecard .pnote{font-size:.94rem;color:rgba(255,255,255,.7);max-width:46ch;margin:0 auto;}
+.pricecard .tbox{margin-top:20px;background:rgba(255,255,255,.07);border-radius:18px;padding:18px;}
+.pricecard .tlab{font-family:'Unbounded',sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:12px;}
+.deadline{background:var(--ink);color:#fff;border-radius:24px;padding:28px 30px;text-align:center;margin-top:16px;}
+.deadline .lab{font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin-bottom:12px;}
+.deadline h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.28rem;margin-bottom:8px;}
+.deadline p{color:rgba(255,255,255,.8);font-size:.97rem;margin:0;}
+.dtimer{display:flex;justify-content:center;gap:10px;margin-top:20px;}
+.tunit{background:rgba(255,255,255,.1);border-radius:14px;padding:12px 8px;min-width:70px;}
+.tnum{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.5rem;line-height:1;}
+.tcap{font-size:.62rem;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.1em;margin-top:6px;}
+.offer{background:linear-gradient(140deg,#e8001d,#7a2ff2);border-radius:28px;padding:32px 30px;color:#fff;margin-top:16px;}
+.offer .tag{display:inline-block;background:rgba(255,255,255,.2);font-family:'Unbounded',sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:20px;margin-bottom:14px;}
+.offer h2{color:#fff;margin-bottom:6px;}
+.offer .was{color:rgba(255,255,255,.75);font-size:.95rem;}
+.offer .price{font-family:'Unbounded',sans-serif;font-weight:900;font-size:2.6rem;line-height:1;margin:8px 0 14px;}
+.offer p{color:rgba(255,255,255,.92);}
+.plan{background:rgba(255,255,255,.15);border-radius:16px;padding:16px 20px;margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.plan .l b{display:block;font-family:'Unbounded',sans-serif;font-weight:800;font-size:1rem;}
+.plan .l small{display:block;font-size:.83rem;color:rgba(255,255,255,.75);margin-top:3px;}
+.plan .p3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.22rem;white-space:nowrap;}
+.free{background:rgba(255,255,255,.18);border-radius:14px;padding:14px 18px;margin-top:12px;font-size:.96rem;line-height:1.45;}
+.cta{display:block;text-align:center;background:#fff;color:var(--red);text-decoration:none;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.86rem;padding:19px 26px;border-radius:16px;margin-top:20px;}
+footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:.78rem;color:var(--muted);text-align:center;}
+
+.prof{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-bottom:10px;}
+.prof .pt{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px;}
+.prof .pn{font-family:'Unbounded',sans-serif;font-weight:800;font-size:1.02rem;}
+.prof .verd{font-family:'Unbounded',sans-serif;font-weight:800;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:14px;background:rgba(232,0,29,.09);color:var(--red);}
+.prof .px{font-size:.98rem;line-height:1.45;color:#3a3640;}
+.prof .px b{font-weight:800;color:var(--ink);}
+.winner{background:linear-gradient(140deg,#7a2ff2,#e8001d 60%,#ff8a3d);border-radius:26px;padding:30px 28px;color:#fff;margin-top:14px;}
+.winner h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.3rem;margin-bottom:14px;}
+.winner p{color:rgba(255,255,255,.93);}
+.winner p b{color:#fff;}
+.tbl{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:6px;}
+.trow{display:grid;grid-template-columns:1.5fr 1fr 1.1fr;border-top:1px solid var(--line);align-items:center;}
+.trow:first-child{border-top:none;background:#f6f2ff;}
+.trow div{padding:13px 16px;font-size:.93rem;line-height:1.35;}
+.trow:first-child div{font-family:'Unbounded',sans-serif;font-weight:800;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--violet);}
+.trow div:first-child{font-weight:700;}
+.no{color:var(--red);font-weight:700;}
+.yes{color:#00996d;font-weight:800;}
+@media(max-width:600px){.trow{grid-template-columns:1fr;}.trow div{padding:9px 14px;font-size:.92rem;border-top:1px dashed var(--line);}.trow div:first-child{border-top:none;font-weight:800;padding-top:14px;}.trow:first-child{display:none;}.trow div:nth-child(2)::before{content:"Подработка: ";color:var(--muted);font-weight:600;}.trow div:nth-child(3)::before{content:"Профессия: ";color:var(--muted);font-weight:600;}}
+.special{background:var(--ink);color:#fff;border-radius:28px;padding:34px 30px;margin-top:16px;text-align:center;}
+.special .lab{font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin-bottom:12px;}
+.special h2{color:#fff;margin-bottom:10px;}
+.special p{color:rgba(255,255,255,.82);max-width:52ch;margin:0 auto 10px;}
+.reply{background:linear-gradient(120deg,var(--violet),var(--pink));border-radius:22px;padding:28px 26px;text-align:center;color:#fff;margin-top:16px;}
+.reply .rt{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.35rem;line-height:1.25;margin-bottom:10px;}
+.reply p{color:rgba(255,255,255,.93);margin:0 auto;max-width:48ch;}
+
+.start{background:linear-gradient(140deg,#7a2ff2,#e8001d 60%,#ff8a3d);border-radius:28px;padding:32px 30px;color:#fff;margin-top:16px;}
+.start .d{display:inline-block;background:rgba(255,255,255,.2);font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:20px;margin-bottom:14px;}
+.start h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.35rem;line-height:1.2;margin-bottom:16px;}
+.start ul{list-style:none;}
+.start li{padding:11px 0 11px 30px;position:relative;font-size:1.02rem;line-height:1.45;border-top:1px solid rgba(255,255,255,.2);}
+.start li:first-child{border-top:none;}
+.start li::before{content:'✓';position:absolute;left:0;font-weight:900;color:#ffd166;}
+.start li b{font-weight:800;}
+.start .fin{margin-top:18px;background:rgba(255,255,255,.16);border-radius:16px;padding:18px 20px;font-size:1.02rem;line-height:1.45;}
+.fomo{background:linear-gradient(140deg,#e8001d,#7a2ff2);border-radius:28px;padding:32px 30px;color:#fff;margin-top:16px;}
+.fomo .tag{display:inline-block;background:rgba(255,255,255,.2);font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:20px;margin-bottom:14px;}
+.fomo h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.42rem;line-height:1.18;margin-bottom:14px;}
+.fomo p{color:rgba(255,255,255,.93);}
+.fomo ul{list-style:none;margin-top:12px;}
+.fomo li{padding:10px 0 10px 28px;position:relative;font-size:1.02rem;line-height:1.45;border-top:1px solid rgba(255,255,255,.18);}
+.fomo li:first-child{border-top:none;}
+.fomo li::before{content:'✓';position:absolute;left:0;font-weight:900;color:#ffd166;}
+.seats{margin-top:18px;background:rgba(255,255,255,.18);border-radius:16px;padding:18px 20px;text-align:center;}
+.seats b{display:block;font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.8rem;margin-bottom:4px;}
+.task{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:18px;padding:18px 20px;margin-bottom:10px;border:1px solid var(--line);}
+.task .em{flex:0 0 auto;width:34px;height:34px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.8rem;color:#fff;background:linear-gradient(135deg,var(--violet),var(--pink));}
+.task .tt{font-size:1rem;line-height:1.45;}
+.task .tt b{font-weight:800;}
+.brands{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px;}
+@media(max-width:600px){.brands{grid-template-columns:repeat(2,1fr);}}
+.brand2{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 14px;text-align:center;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.86rem;}
+.loss{background:var(--ink);color:#fff;border-radius:26px;padding:30px 28px;margin-top:14px;}
+.loss h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.22rem;margin-bottom:16px;}
+.lrow{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 0;border-top:1px solid rgba(255,255,255,.14);font-size:1rem;}
+.lrow:first-of-type{border-top:none;}
+.lrow b{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.05rem;color:#ff6b85;white-space:nowrap;}
+.loss .fin{margin-top:16px;background:rgba(255,255,255,.12);border-radius:16px;padding:18px 20px;font-size:1.04rem;line-height:1.45;}
+.trust{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:6px;}
+.trow{display:flex;gap:14px;align-items:flex-start;padding:16px 22px;border-top:1px solid var(--line);}
+.trow:first-child{border-top:none;}
+.trow .ic3{flex:0 0 auto;width:30px;height:30px;border-radius:10px;background:rgba(0,196,140,.14);color:#00996d;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.85rem;}
+.trow .t3{font-size:1rem;line-height:1.45;}
+.prog2{background:linear-gradient(140deg,#7a2ff2,#e8001d 60%,#ff8a3d);border-radius:28px;padding:34px 30px;color:#fff;margin-top:16px;}
+.prog2 .d{display:inline-block;background:rgba(255,255,255,.2);font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:20px;margin-bottom:14px;}
+.prog2 h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.4rem;line-height:1.2;margin-bottom:8px;}
+.prog2 .lead2{font-size:1.04rem;color:rgba(255,255,255,.92);margin-bottom:18px;}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:600px){.pgrid{grid-template-columns:1fr;}}
+.pcard{background:rgba(255,255,255,.14);border-radius:16px;padding:16px 18px;}
+.pcard b{display:block;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.9rem;margin-bottom:6px;}
+.pcard span{font-size:.94rem;line-height:1.42;color:rgba(255,255,255,.9);}
+.prog2 .cta2{display:block;text-align:center;background:#fff;color:var(--red);text-decoration:none;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.88rem;padding:20px 26px;border-radius:16px;margin-top:20px;}
+.quiz{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;margin-top:8px;}
+.quiz .qh{font-family:'Unbounded',sans-serif;font-weight:800;font-size:1.05rem;margin-bottom:6px;}
+.quiz .qs{font-size:.96rem;color:var(--muted);margin-bottom:18px;}
+.opt{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border:2px solid var(--line);border-radius:14px;margin-bottom:9px;cursor:pointer;transition:.15s;}
+.opt:hover{border-color:#c9b6f5;}
+.opt.on{border-color:var(--violet);background:#f8f3ff;}
+.opt .bx{flex:0 0 auto;width:22px;height:22px;border-radius:7px;border:2px solid var(--violet);margin-top:1px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;font-weight:900;}
+.opt.on .bx{background:var(--violet);}
+.opt .tx{font-size:1rem;line-height:1.38;}
+.qbtn{display:block;width:100%;margin-top:16px;border:none;border-radius:16px;padding:18px;cursor:pointer;background:linear-gradient(120deg,var(--violet),var(--pink));color:#fff;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.88rem;}
+.qbtn:disabled{opacity:.45;cursor:default;}
+#result2{display:none;}
+.rescard{background:linear-gradient(135deg,#eef2ff,#f6edff);border:1px solid #ddd2f7;border-radius:22px;padding:22px 24px;margin-top:12px;}
+.rescard .rt{font-family:'Unbounded',sans-serif;font-weight:800;font-size:1rem;color:var(--violet);margin-bottom:8px;}
+.rescard .rx{font-size:1rem;line-height:1.45;}
+.rescard .rx b{font-weight:800;}
+.tbl2{width:100%;border-collapse:collapse;table-layout:fixed;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:6px;}
+.tbl2 th,.tbl2 td{padding:14px 16px;text-align:left;font-size:.96rem;line-height:1.35;border-top:1px solid var(--line);vertical-align:middle;}
+.tbl2 thead th{background:#f6f2ff;border-top:none;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;color:var(--violet);}
+.tbl2 th:first-child,.tbl2 td:first-child{width:38%;font-weight:700;}
+.tbl2 th:nth-child(2),.tbl2 td:nth-child(2){width:26%;}
+.tbl2 td.no{color:var(--red);font-weight:700;}
+.tbl2 td.yes{color:#00996d;font-weight:800;}
+@media(max-width:600px){.tbl2 th,.tbl2 td{padding:11px 10px;font-size:.88rem;}.tbl2 thead th{font-size:.56rem;}}
+.money5{background:linear-gradient(140deg,#00c48c,#00a3ff);border-radius:26px;padding:30px 28px;color:#fff;margin-top:16px;}
+.money5 .tag{display:inline-block;background:rgba(255,255,255,.22);font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:20px;margin-bottom:14px;}
+.money5 h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.5rem;margin-bottom:12px;}
+.money5 p{color:rgba(255,255,255,.93);}
+.money5 .big5{margin-top:16px;background:rgba(255,255,255,.18);border-radius:16px;padding:20px;text-align:center;}
+.money5 .big5 b{display:block;font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.8rem;margin-bottom:4px;}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;}
+@media(max-width:600px){.stats{grid-template-columns:1fr;}}
+.st2{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;}
+.st2 .num{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.6rem;line-height:1;color:var(--red);}
+.st2.up .num{color:#00996d;}
+.st2 .tx{font-size:.95rem;line-height:1.4;margin-top:9px;}
+.st2 .src{font-size:.76rem;color:var(--muted);margin-top:8px;}
+.mtab{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:8px;}
+.mrow2{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 20px;border-top:1px solid var(--line);font-size:.98rem;line-height:1.35;}
+.mrow2:first-child{border-top:none;}
+.mrow2 b{font-family:'Unbounded',sans-serif;font-weight:800;font-size:.92rem;color:var(--red);white-space:nowrap;}
+.mtot{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px;background:var(--ink);color:#fff;font-size:1.05rem;}
+.mtot b{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.35rem;color:#ff6b85;white-space:nowrap;}
+.fomo{background:linear-gradient(140deg,#e8001d,#7a2ff2);border-radius:28px;padding:32px 30px;color:#fff;margin-top:16px;}
+.fomo .tag{display:inline-block;background:rgba(255,255,255,.2);font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:20px;margin-bottom:14px;}
+.fomo h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.42rem;line-height:1.18;margin-bottom:14px;}
+.fomo p{color:rgba(255,255,255,.93);}
+.seats{margin-top:18px;background:rgba(255,255,255,.18);border-radius:16px;padding:18px 20px;text-align:center;}
+.seats b{display:block;font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.3rem;margin-bottom:6px;}
+
+.calcbox{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;margin-top:14px;}
+.calcbox .ch{font-family:'Unbounded',sans-serif;font-weight:800;font-size:1.05rem;margin-bottom:6px;}
+.calcbox .cs{font-size:.96rem;color:var(--muted);margin-bottom:18px;}
+.srv{display:flex;gap:13px;align-items:flex-start;padding:14px 16px;border:2px solid var(--line);border-radius:14px;margin-bottom:9px;cursor:pointer;transition:.15s;}
+.srv:hover{border-color:#c9b6f5;}
+.srv.on{border-color:var(--violet);background:#f8f3ff;}
+.srv .bx{flex:0 0 auto;width:22px;height:22px;border-radius:7px;border:2px solid var(--violet);margin-top:2px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.78rem;font-weight:900;}
+.srv.on .bx{background:var(--violet);}
+.srv .tx{font-size:1rem;line-height:1.38;}
+.srv .tx small{display:none;color:var(--muted);font-size:.92rem;line-height:1.45;margin-top:7px;}
+.srv.on .tx small{display:block;}
+.allbtn{display:block;width:100%;margin-top:16px;border:none;border-radius:16px;padding:19px;cursor:pointer;background:linear-gradient(120deg,var(--violet),var(--pink));color:#fff;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.9rem;}
+.srv .pr{margin-left:auto;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.84rem;color:var(--red);white-space:nowrap;padding-left:10px;}
+.totbox{background:var(--ink);border-radius:22px;padding:26px 24px;color:#fff;margin-top:16px;}
+.totbox .tl{font-family:'Unbounded',sans-serif;font-weight:800;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);}
+.totbox .tv{font-family:'Unbounded',sans-serif;font-weight:900;font-size:2.3rem;line-height:1.1;margin:8px 0 4px;}
+.totbox .tv.ok{color:#2fe3a0;}
+.totbox .tn{font-size:1.02rem;line-height:1.45;color:rgba(255,255,255,.9);margin-top:12px;}
+.totbox .bar{height:14px;background:rgba(255,255,255,.14);border-radius:10px;overflow:hidden;margin-top:16px;}
+.totbox .fill{height:100%;width:0;background:linear-gradient(90deg,#00c48c,#00a3ff);border-radius:10px;transition:width .5s;}
+.totbox .cap{display:flex;justify-content:space-between;font-size:.85rem;color:rgba(255,255,255,.65);margin-top:8px;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;}
+@media(max-width:600px){.cards{grid-template-columns:1fr;}}
+.rcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;}
+.rcard .n{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.5rem;color:var(--red);line-height:1;}
+.rcard .t{font-size:.96rem;line-height:1.42;margin-top:9px;}
+.fomo{background:linear-gradient(140deg,#e8001d,#7a2ff2);border-radius:28px;padding:34px 30px;color:#fff;margin-top:16px;}
+.fomo .tag{display:inline-block;background:rgba(255,255,255,.2);font-family:'Unbounded',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:20px;margin-bottom:14px;}
+.fomo h3{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.45rem;line-height:1.2;margin-bottom:14px;}
+.fomo p{color:rgba(255,255,255,.93);}
+.seats{margin-top:18px;background:rgba(255,255,255,.18);border-radius:16px;padding:20px;text-align:center;}
+.seats b{display:block;font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.6rem;margin-bottom:5px;}
+.ctabig{display:block;text-align:center;background:#fff;color:#e8001d;text-decoration:none;font-family:'Unbounded',sans-serif;font-weight:900;font-size:1rem;padding:24px 26px;border-radius:18px;margin-top:20px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <div class="brand">Школа Александры Самородовой · <span>маркетолог в сфере рекламы</span></div>
+    <div class="badge">18 поток · последний</div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Честный расчёт</div>
+    <h1>«А чем я буду платить рассрочку?» Давайте посчитаем вместе</h1>
+    <p class="lead">Это самый частый вопрос, который мне задают. И почти всегда человек думает про полную стоимость обучения, хотя платить придётся не её.<br><br>Ниже вы сами посчитаете, сколько работы нужно, чтобы закрыть ежемесячный платёж. Отметьте услуги, которые вы будете оказывать после обучения.</p>
+  </div>
+
+  <div class="lbl v">Сначала цифры</div>
+  <h2>Сколько вы платите <span class="v">на самом деле</span></h2>
+  <div class="cards">
+    <div class="rcard"><div class="n">0 ₽</div><div class="t">при оформлении рассрочки. Первого взноса нет</div></div>
+    <div class="rcard"><div class="n">0 ₽</div><div class="t">первый месяц. Платёж уходит только через месяц после старта</div></div>
+    <div class="rcard"><div class="n">от 5 700 ₽</div><div class="t">ежемесячный платёж по длинной рассрочке</div></div>
+    <div class="rcard"><div class="n">190 ₽</div><div class="t">в день. Это кофе навынос или доставка еды раз в неделю</div></div>
+  </div>
+  <div class="callout">Обратите внимание на главное. <b>Вам не нужна полная сумма здесь и сейчас.</b> Нужен ежемесячный платёж, который начнётся через месяц - когда вы уже будете внутри обучения.</div>
+
+  <div class="lbl r">Теперь считаем</div>
+  <h2>Какие услуги вы сможете оказывать <span class="r">и сколько они стоят</span></h2>
+  <p>Это девять направлений из программы. Нажмите на любое - увидите, что это за работа и сколько времени она занимает. Или нажмите кнопку внизу и посмотрите, сколько это стоит всё вместе.</p>
+
+  <div class="calcbox" id="calcbox">
+    <label class="srv" data-v="200000"><span class="bx">✓</span><span class="tx">Комплексная работа с клиентом<small>Вы ведёте всё продвижение целиком: стратегия, инструменты, контент, аналитика. Применяете разные инструменты под клиента.</small></span><span class="pr">от 200 000 ₽</span></label>
+    <label class="srv" data-v="10000"><span class="bx">✓</span><span class="tx">Рекламные материалы и подачи<small>Текст для рекламы: что написать, чтобы человек заинтересовался и купил. Одна подача - это час-два работы.</small></span><span class="pr">5-15 000 ₽</span></label>
+    <label class="srv" data-v="50000"><span class="bx">✓</span><span class="tx">Продвижение по городам и регионам<small>Работа с местным бизнесом: салоны, клиники, студии, производства. Своя специфика продвижения, и конкуренции среди специалистов почти нет.</small></span><span class="pr">от 50 000 ₽</span></label>
+    <label class="srv" data-v="50000"><span class="bx">✓</span><span class="tx">PR, инфоповоды и офлайн-реклама<small>Радио, телевидение, СМИ, наружка, партнёрства. Отдельное направление, которого нет почти ни у кого из специалистов по соцсетям.</small></span><span class="pr">от 50 000 ₽</span></label>
+    <label class="srv" data-v="80000"><span class="bx">✓</span><span class="tx">Контент клиенту на месяц<small>Не просто посты, а система: что снимать, о чём говорить и в какой последовательности, чтобы человек дошёл до покупки. Сценарии и съёмочный план под нишу.</small></span><span class="pr">50-150 000 ₽</span></label>
+    <label class="srv" data-v="100000"><span class="bx">✓</span><span class="tx">Воронки продаж и путь клиента<small>Маршрут, по которому человек идёт от первого касания до оплаты. Именно здесь чаще всего теряются деньги клиента - и именно поэтому за это платят отдельно.</small></span><span class="pr">50-250 000 ₽</span></label>
+    <label class="srv" data-v="110000"><span class="bx">✓</span><span class="tx">Закупка рекламы<small>Вы подбираете площадки, считаете окупаемость и ведёте бюджет клиента. Оплата - 20-30% от рекламного бюджета: при бюджете 500 000 ₽ это 100-120 тысяч ваших.</small></span><span class="pr">100-120 000 ₽</span></label>
+    <label class="srv" data-v="150000"><span class="bx">✓</span><span class="tx">Контент-завод и работа с UGC<small>Система, при которой контент для бренда снимают десятки людей: UGC-креаторы, амбассадоры, карманные блогеры. Вы выстраиваете и ведёте эту систему.</small></span><span class="pr">100-300 000 ₽</span></label>
+    <label class="srv" data-v="30000"><span class="bx">✓</span><span class="tx">Контекстная реклама или таргет ВКонтакте<small>Реклама, которую видят люди, уже ищущие такой товар. Настройка и ведение одного проекта - несколько дней на запуск, дальше сопровождение.</small></span><span class="pr">от 30 000 ₽</span></label>
+    <button class="allbtn" id="allbtn">Сложить все услуги вместе →</button>
+  </div>
+
+  <div class="totbox" id="totbox">
+    <div class="tl">Если оказывать отмеченные услуги - в месяц</div>
+    <div class="tv" id="sum">0 ₽</div>
+    <div class="bar"><div class="fill" id="fill"></div></div>
+    <div class="cap"><span>платёж 5 700 ₽</span><span id="cover">нажмите на услуги выше</span></div>
+    <div class="tn" id="note">Нажмите на любую услугу - увидите описание и расчёт. Или сложите всё вместе одной кнопкой.</div>
+  </div>
+
+  <div class="lbl b">А теперь самое интересное</div>
+  <h2>Что закрывает платёж <span class="b">целиком</span></h2>
+  <div class="steps">
+    <div class="step"><div class="ic">01</div><div class="st"><b>Одна рекламная подача в месяц.</b> 5-15 тысяч за час-два работы. Один вечер - и платёж закрыт</div></div>
+    <div class="step"><div class="ic">02</div><div class="st"><b>Одна закупка рекламы - 100-120 тысяч</b>, если рекламный бюджет клиента 500 тысяч в месяц. Это больше полутора лет платежей вперёд.<br><br>И даже при небольшом бюджете клиента работа оплачивается фиксированной суммой - от 10 тысяч за проект, хотя занимает всего несколько часов</div></div>
+    <div class="step"><div class="ic">03</div><div class="st"><b>Один клиент на комплексе.</b> От 200 тысяч в месяц - вы просто закрываете всю рассрочку досрочно, без переплат, и забываете про неё</div></div>
+  </div>
+  <div class="callout">Вот почему вопрос «чем платить» на самом деле не про деньги. <b>Одна выполненная задача закрывает платёж полностью</b> - а вы будете уметь девять разных.<br><br>И часть из них доступна уже во время обучения: рекламные материалы и подачи разбираются в первые недели.</div>
+
+  <div class="lbl a">Честно про первые месяцы</div>
+  <h2>Что делать, пока <span class="r">клиентов ещё нет</span></h2>
+  <p>Скажу прямо, без обещаний быстрых денег.</p>
+  <div class="steps">
+    <div class="step"><div class="ic">01</div><div class="st"><b>Первые недели вы учитесь.</b> И за это время нужно закрыть всего два-три платежа - первый уйдёт только через месяц после старта</div></div>
+    <div class="step"><div class="ic">02</div><div class="st"><b>Эти платежи можно закрыть по-разному.</b> Попросить близких поддержать несколько месяцев, занять на три платежа, оформить рассрочку на близкого человека - учитесь при этом вы, и диплом ваш</div></div>
+    <div class="step"><div class="ic">03</div><div class="st"><b>Часть учеников берёт первых клиентов уже в процессе.</b> Обычно на отдельные услуги: подачи, рекламные материалы, контент. Этого хватает, чтобы платёж перестал быть вопросом</div></div>
+  </div>
+  <div class="callout">И ещё одно, о чём редко думают. <b>Свободных денег не станет больше сами по себе.</b> Через год вы будете считать так же - просто цены вырастут, а доход останется прежним.<br><br>Разорвать этот круг можно только одним способом: получить то, что приносит деньги.</div>
+
+  <div class="lbl g">Посмотрите на это иначе</div>
+  <h2>190 рублей в день - <span class="g">это что вообще?</span></h2>
+  <div class="cards">
+    <div class="rcard"><div class="n">1 кофе</div><div class="t">навынос в день. Через неделю вы не вспомните, на что ушли эти деньги</div></div>
+    <div class="rcard"><div class="n">1 доставка</div><div class="t">еды в неделю. Ровно та сумма, которая уходит незаметно</div></div>
+    <div class="rcard"><div class="n">1 такси</div><div class="t">короткая поездка раз в три дня</div></div>
+    <div class="rcard"><div class="n">4 месяца</div><div class="t">столько длится обучение. Они пройдут в любом случае</div></div>
+  </div>
+  <div class="callout">Разница только в том, останется после этих месяцев профессия - или не останется ничего.</div>
+
+  <div class="lbl r">И главное</div>
+  <h2>Вы теряете больше, <span class="r">чем платите</span></h2>
+  <p>Давайте сопоставим две цифры - это весь разговор про «дорого».</p>
+  <div class="cards">
+    <div class="rcard"><div class="n">5 700 ₽</div><div class="t">платите в месяц. Это один вечер работы над рекламной подачей</div></div>
+    <div class="rcard"><div class="n">от 200 000 ₽</div><div class="t">стоит один клиент на комплексе. Это 35 платежей - больше всей рассрочки</div></div>
+    <div class="rcard"><div class="n">2 400 000 ₽</div><div class="t">заработает за год тот, кто взял всего одного такого клиента</div></div>
+    <div class="rcard"><div class="n">0 ₽</div><div class="t">заработает за этот же год тот, кто решил подождать и подумать</div></div>
+  </div>
+  <div class="big">
+    <h3>Посчитайте, что вы теряете</h3>
+    <p>Каждый месяц без профессии стоит вам не 5 700 рублей, а <b>дохода, которого не будет.</b> И этот счёт растёт сам по себе, пока вы думаете.</p>
+    <p>За четыре месяца обучения вы заплатите три платежа. За эти же четыре месяца человек, который зашёл вместо вас, получит профессию и возьмёт первых клиентов.</p>
+    <p style="margin-top:14px"><span class="hl">Через год разница между вами будет не в способностях. Она будет в одном решении, принятом сегодня.</span></p>
+  </div>
+
+  <div class="fomo">
+    <div class="tag">18 поток · последний</div>
+    <h3>Я специально оставила одно место по спеццене</h3>
+    <p>Обычно люди приходят ко мне через один, два, а то и три потока: сначала присматриваются, потом сомневаются, потом решаются.</p>
+    <p style="margin-top:12px"><b>Сейчас такой возможности не будет.</b> Это последний поток - школа закрывается, и прийти позже уже некуда.</p>
+    <p style="margin-top:12px">Поэтому я выделила одно место по специальной стоимости - для того, кто всё понимает, но пока сомневается. Если это про вас - решайтесь сейчас.</p>
+    <div class="seats"><b>Осталось 1 место</b>по специальной цене</div>
+    <a class="ctabig" href="https://t.me/alina_sevalkina" target="_blank" rel="noopener">Написать и забрать это место →</a>
+  </div>
+
+  <footer>Школа Александры Самородовой · профессия «маркетолог в сфере рекламы» · 18 поток, последний</footer>
+</div>
+
+<script>
+var PAY=5700;
+function fmt(n){ return n.toLocaleString('ru-RU').replace(/,/g,' ')+' ₽'; }
+function recalc(){
+  var sum=0, cnt=0;
+  [].slice.call(document.querySelectorAll('.srv.on')).forEach(function(s){
+    sum+=parseInt(s.getAttribute('data-v'),10); cnt++;
+  });
+  document.getElementById('sum').textContent=fmt(sum);
+  var el=document.getElementById('sum');
+  if(sum>=PAY) el.classList.add('ok'); else el.classList.remove('ok');
+  var pct=Math.min(100, Math.round(sum/PAY*100));
+  document.getElementById('fill').style.width=(sum?Math.max(4,Math.min(100,sum/PAY*100)):0)+'%';
+  var note=document.getElementById('note'), cover=document.getElementById('cover');
+  if(!cnt){
+    cover.textContent='нажмите на услуги выше';
+    note.innerHTML='Нажмите на любую услугу - увидите описание и расчёт. Или сложите всё вместе одной кнопкой.';
+    return;
+  }
+  var months=Math.floor(sum/PAY);
+  cover.textContent='покрыто '+(pct>=100?'полностью':pct+'%');
+  if(sum<PAY){
+    note.innerHTML='Пока меньше платежа. Но даже <b>одна рекламная подача за 5-15 тысяч</b> закрывает его целиком - это час-два работы.';
+  } else if(months<=3){
+    note.innerHTML='Этого хватает, чтобы закрыть платёж <b>'+months+' раз подряд</b>. То есть одна такая работа - и про рассрочку можно не думать несколько месяцев.';
+  } else if(months<=18){
+    note.innerHTML='Это <b>'+months+' месяцев рассрочки вперёд</b> с одной работы. Платёж перестаёт быть вопросом вообще.';
+  } else {
+    note.innerHTML='Это <b>больше всей рассрочки целиком</b>. Вы просто закрываете её досрочно, без переплат - и забываете о ней.';
+  }
+}
+[].slice.call(document.querySelectorAll('.srv')).forEach(function(s){
+  s.addEventListener('click',function(e){ e.preventDefault(); s.classList.toggle('on'); recalc(); });
+});
+document.getElementById('allbtn').addEventListener('click',function(){
+  var all=[].slice.call(document.querySelectorAll('.srv'));
+  var allOn=all.every(function(s){ return s.classList.contains('on'); });
+  all.forEach(function(s){ if(allOn) s.classList.remove('on'); else s.classList.add('on'); });
+  this.textContent=allOn?'Сложить все услуги вместе →':'Снять все отметки';
+  recalc();
+  if(!allOn) setTimeout(function(){
+    var el=document.getElementById('totbox');
+    window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-20,behavior:'smooth'});
+  },80);
+});
+recalc();
+</script>
+</body>
+</html>
